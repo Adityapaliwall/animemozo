@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Otaku Hub | My Ultimate Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌌 OTAKU UNIVERSE</h1>
+    <p>Your ultimate gateway to Anime, Manga, and Manhua</p>
+</header>
+
+<div class="marquee-bar">
+    <marquee scrollamount="10">
+        LATEST UPDATES: Solo Leveling S2 • One Piece Chapter 1100+ • New Manhua Drops Daily!
+    </marquee>
+</div>
+
+<div class="container">
+
+    <!-- Anime Section -->
+    <h2 class="section-title">📺 Anime Platforms</h2>
+    <div class="link-grid">
+        <a href="https://hianimes.se/" target="_blank" class="card">
+            <h3>HiAnime</h3>
+            <p>High quality streaming with huge library.</p>
+            <span class="btn-visit">WATCH NOW</span>
+        </a>
+
+        <a href="https://crunchyroll.com/" target="_blank" class="card">
+            <h3>Crunchyroll</h3>
+            <p>The official home for seasonal anime.</p>
+            <span class="btn-visit">WATCH NOW</span>
+        </a>
+    </div>
+
+    <!-- Manga Section (Netflix Style Slider) -->
+    <h2 class="section-title">📖 Manga & Manhua</h2>
+
+    <div class="slider-wrapper">
+        <button class="slider-btn prev" onclick="scrollLeft()">❮</button>
+        <button class="slider-btn next" onclick="scrollRight()">❯</button>
+
+        <div class="link-grid" id="mangaSlider">
+
+            <a href="https://asuracomic.net/" target="_blank" class="card">
+                <h3>Asura Comics</h3>
+                <p>High-quality Manhua/Manhwa scans.</p>
+                <span class="btn-visit">READ NOW</span>
+            </a>
+
+            <a href="https://mangabuddy.com/" target="_blank" class="card">
+                <h3>Manga Buddy</h3>
+                <p>Massive collection with updates.</p>
+                <span class="btn-visit">READ NOW</span>
+            </a>
+
+            <a href="https://manhuafast.net/" target="_blank" class="card">
+                <h3>Manhua Fast</h3>
+                <p>Fast translations for series.</p>
+                <span class="btn-visit">READ NOW</span>
+            </a>
+
+            <a href="https://www.webtoons.com" target="_blank" class="card">
+                <h3>Webtoons</h3>
+                <p>Original stories from creators.</p>
+                <span class="btn-visit">READ NOW</span>
+            </a>
+
+            <a href="https://mangaplus.shueisha.co.jp" target="_blank" class="card">
+                <h3>MangaPlus</h3>
+                <p>Official latest chapters worldwide.</p>
+                <span class="btn-visit">READ NOW</span>
+            </a>
+
+            <a href="https://mangadex.org" target="_blank" class="card">
+                <h3>MangaDex</h3>
+                <p>Community driven library.</p>
+                <span class="btn-visit">READ NOW</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Mature Section -->
+    <h2 class="section-title">🔞 Mature Scans</h2>
+    <div class="link-grid">
+        <a href="https://hentai20.io" target="_blank" class="card">
+            <h3>Hentai.io</h3>
+            <p>Dark fantasy and action series.</p>
+            <span class="btn-visit">WATCH</span>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Otaku Hub | Curated with ❤️
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slider = document.getElementById("mangaSlider");
+
+    document.querySelector(".next").addEventListener("click", () => {
+        slider.scrollLeft += 320;
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+        slider.scrollLeft -= 320;
+    });
+
+});
+</script>
+
+</body>
+</html>
